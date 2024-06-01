@@ -1,9 +1,12 @@
 import pandas as pd
 from urlextract import URLExtract
 from wordcloud import WordCloud
+import nltk
 from nltk.corpus import stopwords
 from collections import Counter
 import emoji
+
+nltk.download('stopwords')
 
 
 def fetch_stats(selected_user, df):
